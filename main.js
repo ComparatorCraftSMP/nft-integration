@@ -83,7 +83,7 @@ document.querySelectorAll(".card").forEach(elem => {
                 toast.appendChild(toastHeader);
                 toast.appendChild(toastBody);
 
-                document.querySelector(".toast-container").appendChild(toast);
+                document.querySelector(".toast-container").prepend(toast);
 
                 setTimeout(() => {
                     toast.remove();
