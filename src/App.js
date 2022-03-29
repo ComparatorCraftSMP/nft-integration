@@ -11,7 +11,7 @@ const IMAGES = [
 ]
 function App() {
   return ( 
-    <div>
+    <div className="col">
       {IMAGES.map(image => (
           <Card source={image} key={image} />
         ))}

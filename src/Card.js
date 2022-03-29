@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Card = ({ imgSRC }) => {
+const Card = ({ source }) => {
     return (
-        <div className="col">
+        
             <div className="card shadow-sm" data-price="350.95">
-                <img src={imgSRC} className="card-img-top" width="100%" alt={Math.floor(Math.random(0,11000))} />
+                <img src={`./images/${source}`} className="card-img-top" width="100%" alt="borana" />
                 <div className="card-body">
                     <h5 className="card-text">Own Mahoose from UltraVanilla as a unique digital asset!</h5>
                     <table className="table">
@@ -36,7 +36,7 @@ const Card = ({ imgSRC }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        
     )
 }
 
