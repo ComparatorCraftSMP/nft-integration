@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './Card';
+import './main'
 
 
 const IMAGES = [
@@ -15,6 +16,7 @@ function App() {
       {IMAGES.map(image => (
           <Card source={image} key={image} />
         ))}
+      
     </div>
     
   );

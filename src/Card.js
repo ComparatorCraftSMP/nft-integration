@@ -1,6 +1,6 @@
 import React from 'react';
 import './main'
-import { appendScript } from './AppendScript';
+
 
 const Card = ({ source }) => {
     return (
