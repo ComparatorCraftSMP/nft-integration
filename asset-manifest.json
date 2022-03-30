@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/nft-integration/static/js/main.c10888d6.js",
+    "main.js": "/nft-integration/static/js/main.a93e3c53.js",
     "index.html": "/nft-integration/index.html",
-    "main.c10888d6.js.map": "/nft-integration/static/js/main.c10888d6.js.map"
+    "main.a93e3c53.js.map": "/nft-integration/static/js/main.a93e3c53.js.map"
   },
   "entrypoints": [
-    "static/js/main.c10888d6.js"
+    "static/js/main.a93e3c53.js"
   ]
 }
