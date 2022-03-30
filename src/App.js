@@ -10,16 +10,25 @@ const IMAGES = [
   "https://media.discordapp.net/attachments/762750140250718220/927660414681100310/2022-01-03_14.31.12.png?width=1693&height=910",
   "https://media.discordapp.net/attachments/857730336679002172/944726199203155978/unknown.png"
 ]
-function App() {
-  return ( 
-    <div className="col">
-      {IMAGES.map(image => (
-          <Card source={image} key={image} />
-        ))}
-      
-    </div>
-    
-  );
+class App extends React.Component {
+
+  componentDidMount(){
+    const script = document.createElement("script");
+    script.src = "./main.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }
+
+  render(){
+    return ( 
+      <div className="col">
+        {IMAGES.map(image => (
+            <Card source={image} key={image} />
+          ))}
+      </div>
+    );
+  }
+  
 }
 
 export default App;
