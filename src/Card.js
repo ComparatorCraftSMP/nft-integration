@@ -4,7 +4,7 @@ const Card = ({ source }) => {
     return (
         
             <div className="card shadow-sm" data-price="350.95">
-                <img src={`./images/${source}`} className="card-img-top" width="100%" alt="borana" />
+                <img src={`${source}`} className="card-img-top" width="100%" alt="borana" />
                 <div className="card-body">
                     <h5 className="card-text">Own Mahoose from UltraVanilla as a unique digital asset!</h5>
                     <table className="table">
