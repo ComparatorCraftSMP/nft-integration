@@ -1,8 +1,10 @@
 import React from 'react';
-import './main'
+import './main.js'
+
 
 
 const Card = ({ source }) => {
+   
     return (
         
             <div className="card shadow-sm" data-price="350.95">
@@ -41,5 +43,6 @@ const Card = ({ source }) => {
         
     )
 }
+
 
 export default Card

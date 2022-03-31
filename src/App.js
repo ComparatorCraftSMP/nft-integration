@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card';
-import './main'
+import './main.js'
 
 
 const IMAGES = [
@@ -12,16 +12,10 @@ const IMAGES = [
 ]
 class App extends React.Component {
 
-  componentDidMount(){
-    const script = document.createElement("script");
-    script.src = "./main.js";
-    script.async = true;
-    document.body.appendChild(script);
-  }
 
   render(){
     return ( 
-      <div className="col">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
         {IMAGES.map(image => (
             <Card source={image} key={image} />
           ))}
