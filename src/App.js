@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card';
 import './main.js'
+import Helmet from 'react-helmet'
 
 
 const IMAGES = [
@@ -12,13 +13,19 @@ const IMAGES = [
 ]
 class App extends React.Component {
 
-
+  
   render(){
     return ( 
+      
+
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+
         {IMAGES.map(image => (
             <Card source={image} key={image} />
           ))}
+        <Helmet>
+              <script src="./main.js"></script>
+        </Helmet>
       </div>
     );
   }

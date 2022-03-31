@@ -1,14 +1,17 @@
 import React from 'react';
 import './main.js'
+import Helmet from 'react-helmet'
 
 
+class Card extends React.Component {
 
-const Card = ({ source }) => {
+    
+    render(){
    
-    return (
+        return (
         
             <div className="card shadow-sm" data-price="350.95">
-                <img src={`${source}`} className="card-img-top" width="100%" alt="borana" />
+                <img src={`${this.props.source}`} className="card-img-top" width="100%" alt="borana" />
                 <div className="card-body">
                     <h5 className="card-text">Own Mahoose from UltraVanilla as a unique digital asset!</h5>
                     <table className="table">
@@ -41,7 +44,8 @@ const Card = ({ source }) => {
                 </div>
             </div>
         
-    )
+        )
+    }
 }
 
 
